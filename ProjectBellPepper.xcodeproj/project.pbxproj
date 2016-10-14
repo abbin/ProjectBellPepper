@@ -13,6 +13,8 @@
 		EDD402BC1DB0E5290051B1CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD402BA1DB0E5290051B1CF /* Main.storyboard */; };
 		EDD402BE1DB0E52A0051B1CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD402BD1DB0E52A0051B1CF /* Assets.xcassets */; };
 		EDD402C11DB0E52A0051B1CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD402BF1DB0E52A0051B1CF /* LaunchScreen.storyboard */; };
+		EDD402CA1DB0E58D0051B1CF /* BPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD402C91DB0E58D0051B1CF /* BPManager.m */; };
+		EDD402CD1DB0E6EF0051B1CF /* BPSetAppLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD402CC1DB0E6EF0051B1CF /* BPSetAppLocationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		EDD402BD1DB0E52A0051B1CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDD402C01DB0E52A0051B1CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDD402C21DB0E52A0051B1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDD402C81DB0E58D0051B1CF /* BPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPManager.h; sourceTree = "<group>"; };
+		EDD402C91DB0E58D0051B1CF /* BPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPManager.m; sourceTree = "<group>"; };
+		EDD402CB1DB0E6EF0051B1CF /* BPSetAppLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPSetAppLocationViewController.h; sourceTree = "<group>"; };
+		EDD402CC1DB0E6EF0051B1CF /* BPSetAppLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPSetAppLocationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,12 @@
 			children = (
 				EDD402B41DB0E5290051B1CF /* AppDelegate.h */,
 				EDD402B51DB0E5290051B1CF /* AppDelegate.m */,
+				EDD402C81DB0E58D0051B1CF /* BPManager.h */,
+				EDD402C91DB0E58D0051B1CF /* BPManager.m */,
 				EDD402B71DB0E5290051B1CF /* ViewController.h */,
 				EDD402B81DB0E5290051B1CF /* ViewController.m */,
+				EDD402CB1DB0E6EF0051B1CF /* BPSetAppLocationViewController.h */,
+				EDD402CC1DB0E6EF0051B1CF /* BPSetAppLocationViewController.m */,
 				EDD402BA1DB0E5290051B1CF /* Main.storyboard */,
 				EDD402BD1DB0E52A0051B1CF /* Assets.xcassets */,
 				EDD402BF1DB0E52A0051B1CF /* LaunchScreen.storyboard */,
@@ -105,6 +115,7 @@
 		EDD402A61DB0E5290051B1CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BP;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Abbin Varghese";
 				TargetAttributes = {
@@ -153,7 +164,9 @@
 			files = (
 				EDD402B91DB0E5290051B1CF /* ViewController.m in Sources */,
 				EDD402B61DB0E5290051B1CF /* AppDelegate.m in Sources */,
+				EDD402CD1DB0E6EF0051B1CF /* BPSetAppLocationViewController.m in Sources */,
 				EDD402B31DB0E5290051B1CF /* main.m in Sources */,
+				EDD402CA1DB0E58D0051B1CF /* BPManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +286,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EDXP6Y48QS;
 				INFOPLIST_FILE = ProjectBellPepper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abbinvarghese.ProjectBellPepper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EDXP6Y48QS;
 				INFOPLIST_FILE = ProjectBellPepper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abbinvarghese.ProjectBellPepper;
 				PRODUCT_NAME = "$(TARGET_NAME)";

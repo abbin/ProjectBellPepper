@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "BPManager.h"
+#import "BPSetAppLocationViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    if (![BPManager isLocationSet]) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        BPSetAppLocationViewController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"BPSetAppLocationViewController"];
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        self.window.rootViewController = rootViewController;
+        [self.window makeKeyAndVisible];
+    }
     return YES;
 }
 
